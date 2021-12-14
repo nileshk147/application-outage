@@ -1,0 +1,15 @@
+[
+        {
+            "application_name": "Word",
+            "status": true
+        },
+        {
+            "application_name": "Excel",
+            "status": true
+        },
+        {
+            "application_name": "Outlook",
+            "status": true
+        }
+
+]
