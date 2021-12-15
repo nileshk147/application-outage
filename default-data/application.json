@@ -1,15 +1,15 @@
 [
         {
             "application_name": "Word",
-            "status": true
+            "status": false
         },
         {
             "application_name": "Excel",
-            "status": true
+            "status": false
         },
         {
             "application_name": "Outlook",
-            "status": true
+            "status": false
         }
 
 ]
