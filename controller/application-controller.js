@@ -31,7 +31,7 @@ exports.updateApplicationStatus = async (req, res, next)=>{
                 recieved_from: userData._id
             }
 
-            if(!status){
+            if(status){
                 data['outage_end_time'] = date;
             }else{
                 data['outage_start_time']= date;
