@@ -30,7 +30,7 @@ app.use(function(req, res, next) {
 });
 
 mongoose.connect(
-  "mongodb://localhost/application-outage",
+  process.env.MONGODB_URI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
   function (err) {
     if (err) throw err;
