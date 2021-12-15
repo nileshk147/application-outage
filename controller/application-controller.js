@@ -39,7 +39,7 @@ exports.updateApplicationStatus = async (req, res, next)=>{
 
             const result = await applicationSchema.updateOne({'_id': request_id},{$set: data}).exec();
             if(result){
-                return res.status(200).success(result, `Application outage ${status ? 'started' : 'stopped'}`);
+                return res.status(200).success(result, `Application outage ${!status ? 'started' : 'stopped'}`);
             }else{
                 return res.status(400).error('Something went wrong!');
             }
